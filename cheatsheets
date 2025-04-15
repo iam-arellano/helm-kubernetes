@@ -1,0 +1,27 @@
+
+1. To create custom  helm
+
+sudo helm create my_app
+
+
+2. To check syntax of your chart
+
+helm lint my_app
+
+
+3.To check orview of your chart before deploy to your kubernetes cluster
+
+helm install --dry-run --debug my_app --generate-name
+
+
+
+4. To deploy your helm chart in kubernetes cluster
+
+helm install custom-name my_app
+
+ 
+5. To update/upgrade after templating
+
+helm upgrade custom-name my_app
+
+ 
