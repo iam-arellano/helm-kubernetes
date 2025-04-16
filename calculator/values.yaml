@@ -1,0 +1,9 @@
+appName: helm-deployment-calculator
+
+appLabel: helm-calulator
+
+image:
+  name: raemondarellano/my-calculator
+  tag: 1.0.0-50
+
+appNameservice: helm-service-calculator
