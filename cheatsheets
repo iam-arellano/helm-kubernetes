@@ -25,3 +25,13 @@ helm install custom-name my_app
 helm upgrade custom-name my_app
 
  
+
+6. To install dev and prod helm
+
+For Prod
+helm install prod my_app_folder/ --values my_app_folder/values-prod.yaml 
+
+
+For Dev
+helm install dev my_app_folder/ --values my_app_folder/values-dev.yaml
+
