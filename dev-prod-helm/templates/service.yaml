@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{  .Values.appNameservice }}
+#  namespace: namespace-calculator
+spec:
+  selector:
+    app: {{  .Values.appLabel }}
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
